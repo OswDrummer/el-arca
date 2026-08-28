@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Arca - Buscador</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: #e0e0e0; margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: auto; }
+        h1 { text-align: center; color: #00d2ff; }
+        form { display: flex; gap: 10px; margin-bottom: 20px; }
+        input[type="text"] { flex: 1; padding: 12px; border-radius: 6px; border: 1px solid #333; background: #222; color: #fff; font-size: 16px; }
+        select, button { padding: 12px; border-radius: 6px; border: none; background: #00d2ff; color: #000; font-weight: bold; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; background: #1e1e1e; border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
+        th { background: #2a2a2a; color: #00d2ff; }
+        tr:hover { background: #282828; }
+        .badge { background: #333; padding: 4px 8px; border-radius: 4px; font-size: 12px; }
+        .badge-x265 { background: #0e6251; color: #a3e4d7; }
+        .badge-animada { background: #7d6608; color: #f9e79f; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>El Arca - Base de Datos</h1>
+
+        <form method="GET" action="/">
+            <input type="text" name="q" placeholder="Buscar título, saga, artista o década..." value="{{ busqueda }}">
+            <select name="tipo">
+                <option value="peliculas" {% if tipo == 'peliculas' %}selected{% endif %}>Películas</option>
+                <option value="musica" {% if tipo == 'musica' %}selected{% endif %}>Música</option>
+            </select>
+            <button type="submit">Buscar</button>
+        </form>
+
+        {% if tipo == 'peliculas' %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Saga</th>
+                    <th>Año</th>
+                    <th>Década</th>
+                    <th>Formato</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for p in peliculas %}
+                <tr>
+                    <td><strong>{{ p.titulo }}</strong></td>
+                    <td>{{ p.saga }}</td>
+                    <td>{{ p.anio_estreno or 'N/A' }}</td>
+                    <td><span class="badge">{{ p.decada or 'N/A' }}</span></td>
+                    <td>
+                        <span class="badge">{{ p.resolucion }}</span>
+                        {% if p.es_x265 %}<span class="badge badge-x265">x265</span>{% endif %}
+                        {% if p.es_animada %}<span class="badge badge-animada">Animada</span>{% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        {% if tipo == 'musica' %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Artista</th>
+                    <th>Álbum</th>
+                    <th>Año</th>
+                    <th>Calidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for m in albumes %}
+                <tr>
+                    <td><strong>{{ m.artista }}</strong></td>
+                    <td>{{ m.titulo_album }}</td>
+                    <td>{{ m.anio_lanzamiento or 'N/A' }}</td>
+                    <td><span class="badge">{{ m.formato }} ({{ m.bitrate }})</span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+</body>
+</html>
