@@ -1,5 +1,17 @@
+import sqlite3
+import os
+from flask import Flask, render_template, request, jsonify
+
+app = Flask(__name__)
+RUTA_BD = os.path.join(os.path.dirname(__file__), "El_Arca.db")
+
+def obtener_conexion():
+    conn = sqlite3.connect(RUTA_BD)
+    conn.row_factory = sqlite3.Row  # Permite acceder a las columnas por su nombre
+    return conn
+
 # ---------------------------------------------------------
-# RUTA WEB PRINCIPAL (Buscador)
+# RUTA WEB PRINCIPAL (Buscador + Estadísticas)
 # ---------------------------------------------------------
 @app.route("/", methods=["GET"])
 def inicio():
@@ -66,7 +78,6 @@ def inicio():
 
     conn.close()
 
-    # Enviamos ambas variables a la plantilla
     return render_template(
         "index.html",
         peliculas=peliculas,
@@ -76,3 +87,41 @@ def inicio():
         total_artistas=total_artistas_val,
         total_peliculas=total_peliculas_val
     )
+
+# ---------------------------------------------------------
+# ENDPOINTS API: Consultas directas en JSON
+# ---------------------------------------------------------
+@app.route("/api/total-artistas", methods=["GET"])
+def total_artistas():
+    conn = obtener_conexion()
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT COUNT(*) AS total FROM artistas")
+    resultado = cursor.fetchone()
+    total = resultado["total"] if resultado else 0
+
+    conn.close()
+
+    return jsonify({
+        "ok": True,
+        "total_artistas": total
+    })
+
+@app.route("/api/total-peliculas", methods=["GET"])
+def total_peliculas():
+    conn = obtener_conexion()
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT COUNT(*) AS total FROM peliculas")
+    resultado = cursor.fetchone()
+    total = resultado["total"] if resultado else 0
+
+    conn.close()
+
+    return jsonify({
+        "ok": True,
+        "total_peliculas": total
+    })
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
