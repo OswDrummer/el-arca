@@ -3,6 +3,13 @@ The Sign (1993) [Opus 256k]
 The Bridge (1995) [Opus 256k]
 Flower (1998) [Opus 256k]
 
+Animals as Leaders
+Animals as Leaders (2009)  [Opus 256k]
+Weightless (2011) [Opus 256k] [Opus 128k]
+The Joy of Motion (2014) [Opus 256k]
+The Madness Of Many (2016)
+Parrhesia (2022) [Opus 256k]
+
 Apocalyptica
 Plays Metallica By Four Cellos (1996) [Opus 256k]
 Inquisition Symphony (1998) [Opus 256k]
@@ -37,6 +44,18 @@ Carbon Based Anatomy (2011) [Opus 128k]
 Kindly Bent to Free Us (2014) [Opus 128k]
 Re-Traced (2010) [Opus 128k]
 Traced In Air (2008) [Opus 128k]
+
+Disturbed
+Asylum (2015) [Opus 256k]
+Believe (2002) [Opus 256k]
+Divisive (2022) [Opus 256k]
+Evolution (2018) [Opus 256k]
+Immortalized (2015) [Opus 256k]
+Indestructible (2008) [Opus 256k]
+Live At Red Rocks (2016) [Opus 256k]
+Ten Thousand Fists (2005) [Opus 256k]
+The Lost Children (2011) [Opus 256k]
+The Sickness (2000) [Opus 256k]
 
 Incubus
 8 (2017) [Opus 256k]
@@ -97,7 +116,25 @@ Minutes To Midnight (2007) [Opus 256k]
 One More Light (2017) [Opus 256k]
 The Hunting Party (2014) [Opus 256k]
 
-Megadethn
+Los Pericos
+Big Yuyo (1992) [Opus 128k]
+Pampas Reggae (1994) [Opus 256k]
+Yerba Buena (1996) [Opus 128k]
+Mystic Love (1998) [Opus 256k]
+
+Los Prisioneros
+Corazones (1991) [Opus 256k]
+Ni Por La Razón, Ni Por La Fuerza (1996) [Opus 256k]
+
+Mecano
+Mecano (1982) [Opus 256k]
+Dónde Está El País De Las Hadas (1983) [Opus 256k]
+Ya Viene El Sol (1984) [Opus 256k]
+Entre El Cielo Y El Suelo (1986) [Opus 256k]
+Descanso Dominical  (1988) [Opus 256k]
+Aidalai (1991) [Opus 128k]
+
+Megadeth
 Megadeth (2026) [Opus 256k]
 The Sick, "The Diying.. And The Death (2022) [Opus 256k]
 Dystopia (2016) [Opus 256k]
@@ -130,7 +167,7 @@ Hirewired to Self-Destruct (2016) [Opus 256k]
 72 Seasons (2023) [Opus 256k]
 I Disappear (2000) [Opus 128k]
 
-Michal Jackson
+Michael Jackson
 Off The Wall (1979) [Opus 256k]
 Thriller (1982) [Opus 256k]
 Bad (1987) [Opus 256k]
@@ -188,6 +225,27 @@ Sheryl Crow
 Tusday Night Music Club (1993) [Opus 256k]
 The Very Best Of Sheryl (2003) Crow [Opus 256k]
 
+The Cardigans
+Emmerdale (1994) [Opus 256k]
+Life (1996) [Opus 256k]
+First Band On The Moon (1996) [Opus 256k]
+The Other Side Of The Moon (1997) [Opus 256k]
+Gran Turismo (1998) [Opus 256k]
+Long Gone Before Daylight (2003) [Opus 256k]
+Super Extra Gravity (2005) [Opus 256k]
+
+The Corrs
+Borrowed Heaven (2004) [Opus 256k]
+Dreams The Ultimate Corrs Collection (2006) [Opus 256k]
+Forgiven, Not Forgotten (1995) [Opus 256k]
+Home (2005) [Opus 256k]
+In Blue (2000) [Opus 256k]
+Jupiter Calling (2017) [Opus 256k]
+Talk on Corners (1997) [Opus 256k]
+The Corrs Unplugged (1999) [Opus 256k]
+White Light (2015) [Opus 128k]
+
+
 The Cure
 The Cure Show (1993) [Opus 256k]
 Gratest Hits (2001) [Opus 256k]
@@ -213,7 +271,7 @@ A Diying Machine (2018) [Opus 128k]
 Marching in Time (2021) [Opus 128k]
 The End Will Show Us How (2025) [Opus 128k]
 
-Varous Artists
+Various Artists
 The Besth Music Of All Times (1990) [Opus 128k]
 La Mega 90's Songs (1990) [Opus 128k]
 Solo Girls 90's Pop Songs (1990) [Opus 128k]
@@ -222,7 +280,7 @@ Breakin' (1984) [Opus 128k]
 Crazy Mix (1986) [Mp3 64kbps]
 Ghostbusters (1984) [Opus 128k]
 Highspeed (1983) [Opus 128k]
-Hit Express (1982 [Opus 128k]
+Hit Express (1982) [Opus 128k]
 Turbo Hits (1984) [Opus 128k]
 Starś Fire (1984) [Opus 128k]
 Mouth To Mouth (1979) [Opus 128k]
