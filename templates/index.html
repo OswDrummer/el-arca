@@ -11,12 +11,14 @@
 <body>
 
     <!-- Encabezado superior visible -->
-    <header class="barra-superior">
+<header class="barra-superior">
     <div class="logo-titulo">
+        <!-- Imagen del logo desde la carpeta static -->
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo El Arca" class="img-logo">
         <h1>El Arca</h1>
     </div>
 
-    <!-- Contenedor con ambos contadores -->
+    <!-- Contenedor con los contadores -->
     <div class="contenedor-badges">
         <div class="info-badge">
             <span class="etiqueta">Películas:</span>

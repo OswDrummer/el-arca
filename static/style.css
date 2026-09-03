@@ -190,3 +190,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
+.img-logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    /* Ajusta la opacidad si deseas que mantenga el tono sutil y tenue */
+    opacity: 0.9;
+}
