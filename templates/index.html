@@ -12,16 +12,23 @@
 
     <!-- Encabezado superior visible -->
     <header class="barra-superior">
-        <div class="logo-titulo">
-            <h1>El Arca</h1>
+    <div class="logo-titulo">
+        <h1>El Arca</h1>
+    </div>
+
+    <!-- Contenedor con ambos contadores -->
+    <div class="contenedor-badges">
+        <div class="info-badge">
+            <span class="etiqueta">Películas:</span>
+            <strong class="numero">{{ total_peliculas }}</strong>
         </div>
 
-        <!-- Indicador con el conteo de artistas -->
         <div class="info-badge">
-            <span class="etiqueta">Artistas respaldados:</span>
+            <span class="etiqueta">Artistas:</span>
             <strong class="numero">{{ total_artistas }}</strong>
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- Contenido principal -->
     <main class="contenedor-principal">

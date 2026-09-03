@@ -1,15 +1,3 @@
-import sqlite3
-import os
-from flask import Flask, render_template, request, jsonify
-
-app = Flask(__name__)
-RUTA_BD = os.path.join(os.path.dirname(__file__), "El_Arca.db")
-
-def obtener_conexion():
-    conn = sqlite3.connect(RUTA_BD)
-    conn.row_factory = sqlite3.Row  # Permite acceder a las columnas por su nombre
-    return conn
-
 # ---------------------------------------------------------
 # RUTA WEB PRINCIPAL (Buscador)
 # ---------------------------------------------------------
@@ -24,10 +12,15 @@ def inicio():
     conn = obtener_conexion()
     cursor = conn.cursor()
 
-    # Obtener el total de artistas para la interfaz
+    # 1. Obtener total de artistas
     cursor.execute("SELECT COUNT(*) AS total FROM artistas")
     res_artistas = cursor.fetchone()
     total_artistas_val = res_artistas["total"] if res_artistas else 0
+
+    # 2. Obtener total de películas
+    cursor.execute("SELECT COUNT(*) AS total FROM peliculas")
+    res_peliculas = cursor.fetchone()
+    total_peliculas_val = res_peliculas["total"] if res_peliculas else 0
 
     if filtro_tipo == "peliculas":
         if busqueda:
@@ -72,26 +65,14 @@ def inicio():
             albumes = cursor.execute(query).fetchall()
 
     conn.close()
-    return render_template("index.html", peliculas=peliculas, albumes=albumes, busqueda=busqueda, tipo=filtro_tipo, total_artistas=total_artistas_val)
 
-# ---------------------------------------------------------
-# ENDPOINT API: Conteo total de artistas
-# ---------------------------------------------------------
-@app.route("/api/total-artistas", methods=["GET"])
-def total_artistas():
-    conn = obtener_conexion()
-    cursor = conn.cursor()
-
-    cursor.execute("SELECT COUNT(*) AS total FROM artistas")
-    resultado = cursor.fetchone()
-    total = resultado["total"] if resultado else 0
-
-    conn.close()
-
-    return jsonify({
-        "ok": True,
-        "total_artistas": total
-    })
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    # Enviamos ambas variables a la plantilla
+    return render_template(
+        "index.html",
+        peliculas=peliculas,
+        albumes=albumes,
+        busqueda=busqueda,
+        tipo=filtro_tipo,
+        total_artistas=total_artistas_val,
+        total_peliculas=total_peliculas_val
+    )
