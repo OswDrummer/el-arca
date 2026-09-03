@@ -24,6 +24,11 @@ def inicio():
     conn = obtener_conexion()
     cursor = conn.cursor()
 
+    # Obtener el total de artistas para la interfaz
+    cursor.execute("SELECT COUNT(*) AS total FROM artistas")
+    res_artistas = cursor.fetchone()
+    total_artistas_val = res_artistas["total"] if res_artistas else 0
+
     if filtro_tipo == "peliculas":
         if busqueda:
             query = """
@@ -44,7 +49,6 @@ def inicio():
 
     elif filtro_tipo == "musica":
         if busqueda:
-            # Ordena cronológicamente (ASC) por año de lanzamiento y luego por título de álbum
             query = """
                 SELECT a.nombre AS artista, al.titulo_album, al.anio_lanzamiento, al.bitrate, al.formato
                 FROM albumes al
@@ -68,7 +72,7 @@ def inicio():
             albumes = cursor.execute(query).fetchall()
 
     conn.close()
-    return render_template("index.html", peliculas=peliculas, albumes=albumes, busqueda=busqueda, tipo=filtro_tipo)
+    return render_template("index.html", peliculas=peliculas, albumes=albumes, busqueda=busqueda, tipo=filtro_tipo, total_artistas=total_artistas_val)
 
 # ---------------------------------------------------------
 # ENDPOINT API: Conteo total de artistas
@@ -78,7 +82,6 @@ def total_artistas():
     conn = obtener_conexion()
     cursor = conn.cursor()
 
-    # Consulta la cantidad total de registros en la tabla artistas
     cursor.execute("SELECT COUNT(*) AS total FROM artistas")
     resultado = cursor.fetchone()
     total = resultado["total"] if resultado else 0
