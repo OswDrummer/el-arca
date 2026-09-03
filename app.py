@@ -24,16 +24,20 @@ def inicio():
     conn = obtener_conexion()
     cursor = conn.cursor()
 
-    # 1. Obtener total de artistas
+    # 1. Totales para el encabezado
     cursor.execute("SELECT COUNT(*) AS total FROM artistas")
     res_artistas = cursor.fetchone()
     total_artistas_val = res_artistas["total"] if res_artistas else 0
 
-    # 2. Obtener total de películas
     cursor.execute("SELECT COUNT(*) AS total FROM peliculas")
     res_peliculas = cursor.fetchone()
     total_peliculas_val = res_peliculas["total"] if res_peliculas else 0
 
+    cursor.execute("SELECT COUNT(*) AS total FROM albumes")
+    res_albumes = cursor.fetchone()
+    total_albumes_val = res_albumes["total"] if res_albumes else 0
+
+    # 2. Consultas de búsqueda / listado inicial
     if filtro_tipo == "peliculas":
         if busqueda:
             query = """
@@ -85,43 +89,42 @@ def inicio():
         busqueda=busqueda,
         tipo=filtro_tipo,
         total_artistas=total_artistas_val,
-        total_peliculas=total_peliculas_val
+        total_peliculas=total_peliculas_val,
+        total_albumes=total_albumes_val
     )
 
 # ---------------------------------------------------------
-# ENDPOINTS API: Consultas directas en JSON
+# ENDPOINTS API (JSON)
 # ---------------------------------------------------------
 @app.route("/api/total-artistas", methods=["GET"])
 def total_artistas():
     conn = obtener_conexion()
     cursor = conn.cursor()
-
     cursor.execute("SELECT COUNT(*) AS total FROM artistas")
     resultado = cursor.fetchone()
     total = resultado["total"] if resultado else 0
-
     conn.close()
-
-    return jsonify({
-        "ok": True,
-        "total_artistas": total
-    })
+    return jsonify({"ok": True, "total_artistas": total})
 
 @app.route("/api/total-peliculas", methods=["GET"])
 def total_peliculas():
     conn = obtener_conexion()
     cursor = conn.cursor()
-
     cursor.execute("SELECT COUNT(*) AS total FROM peliculas")
     resultado = cursor.fetchone()
     total = resultado["total"] if resultado else 0
-
     conn.close()
+    return jsonify({"ok": True, "total_peliculas": total})
 
-    return jsonify({
-        "ok": True,
-        "total_peliculas": total
-    })
+@app.route("/api/total-albumes", methods=["GET"])
+def total_albumes():
+    conn = obtener_conexion()
+    cursor = conn.cursor()
+    cursor.execute("SELECT COUNT(*) AS total FROM albumes")
+    resultado = cursor.fetchone()
+    total = resultado["total"] if resultado else 0
+    conn.close()
+    return jsonify({"ok": True, "total_albumes": total})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)

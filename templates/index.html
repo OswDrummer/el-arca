@@ -4,37 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Arca - Catálogo</title>
-
-    <!-- Archivo CSS externo (asegúrate de guardarlo en static/style.css) -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-    <!-- Encabezado superior visible -->
-<header class="barra-superior">
-    <div class="logo-titulo">
-        <!-- Imagen del logo desde la carpeta static -->
-        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo El Arca" class="img-logo">
-        <h1>El Arca</h1>
-    </div>
-
-    <!-- Contenedor con los contadores -->
-    <div class="contenedor-badges">
-        <div class="info-badge">
-            <span class="etiqueta">Películas:</span>
-            <strong class="numero">{{ total_peliculas }}</strong>
+    <!-- Encabezado con Logo y Totales -->
+    <header class="barra-superior">
+        <div class="logo-titulo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo El Arca" class="img-logo">
+            <h1>El Arca</h1>
         </div>
 
-        <div class="info-badge">
-            <span class="etiqueta">Artistas:</span>
-            <strong class="numero">{{ total_artistas }}</strong>
+        <div class="contenedor-badges">
+            <div class="info-badge">
+                <span class="etiqueta">Películas:</span>
+                <strong class="numero">{{ total_peliculas }}</strong>
+            </div>
+            <div class="info-badge">
+                <span class="etiqueta">Álbumes:</span>
+                <strong class="numero">{{ total_albumes }}</strong>
+            </div>
+            <div class="info-badge">
+                <span class="etiqueta">Artistas:</span>
+                <strong class="numero">{{ total_artistas }}</strong>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-    <!-- Contenido principal -->
+    <!-- Contenido Principal: Buscador y Tabla de Resultados -->
     <main class="contenedor-principal">
-        <!-- Aquí irán tus tarjetas de artistas / lista de estilos -->
+
+        <!-- Formulario de Búsqueda -->
+        <form method="GET" action="/" class="buscador-form">
+            <input type="text" name="q" value="{{ busqueda }}" placeholder="Buscar por título, artista, año..." class="input-busqueda">
+
+            <select name="tipo" class="select-tipo">
+                <option value="peliculas" {% if tipo == 'peliculas' %}selected{% endif %}>Películas</option>
+                <option value="musica" {% if tipo == 'musica' %}selected{% endif %}>Música</option>
+            </select>
+
+            <button type="submit" class="btn-buscar">Buscar</button>
+        </form>
+
+        <!-- Resultados: Películas -->
+        {% if tipo == 'peliculas' %}
+            {% if peliculas %}
+                <table class="tabla-resultados">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Saga</th>
+                            <th>Año</th>
+                            <th>Resolución</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for p in peliculas %}
+                        <tr>
+                            <td><strong>{{ p.titulo }}</strong></td>
+                            <td>{{ p.saga or '-' }}</td>
+                            <td>{{ p.anio_estreno }}</td>
+                            <td>{{ p.resolucion }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p class="sin-resultados">No se encontraron películas.</p>
+            {% endif %}
+        {% endif %}
+
+        <!-- Resultados: Música -->
+        {% if tipo == 'musica' %}
+            {% if albumes %}
+                <table class="tabla-resultados">
+                    <thead>
+                        <tr>
+                            <th>Artista</th>
+                            <th>Álbum</th>
+                            <th>Año</th>
+                            <th>Formato / Bitrate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for a in albumes %}
+                        <tr>
+                            <td><strong>{{ a.artista }}</strong></td>
+                            <td>{{ a.titulo_album }}</td>
+                            <td>{{ a.anio_lanzamiento }}</td>
+                            <td>{{ a.formato }} ({{ a.bitrate }})</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p class="sin-resultados">No se encontraron álbumes.</p>
+            {% endif %}
+        {% endif %}
+
     </main>
 
 </body>
