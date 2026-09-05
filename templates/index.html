@@ -31,16 +31,30 @@
         </div>
     </header>
 
-    <!-- Contenido Principal: Buscador y Tabla de Resultados -->
+    <!-- Contenido Principal -->
     <main class="contenedor-principal">
+
+        <!-- Botones de Navegación Rápida -->
+        <nav class="acciones-rapidas">
+            <a href="/?tipo=peliculas" class="btn-navegacion {% if tipo == 'peliculas' %}activo{% endif %}">
+                Ver Películas
+            </a>
+            <a href="/?tipo=artistas" class="btn-navegacion {% if tipo == 'artistas' %}activo{% endif %}">
+                Ver Artistas
+            </a>
+            <a href="/?tipo=musica" class="btn-navegacion {% if tipo == 'musica' %}activo{% endif %}">
+                Ver Álbumes
+            </a>
+        </nav>
 
         <!-- Formulario de Búsqueda -->
         <form method="GET" action="/" class="buscador-form">
-            <input type="text" name="q" value="{{ busqueda }}" placeholder="Buscar por título, artista, año..." class="input-busqueda">
+            <input type="text" name="q" value="{{ busqueda }}" placeholder="Buscar por nombre, título, año..." class="input-busqueda">
 
             <select name="tipo" class="select-tipo">
                 <option value="peliculas" {% if tipo == 'peliculas' %}selected{% endif %}>Películas</option>
-                <option value="musica" {% if tipo == 'musica' %}selected{% endif %}>Música</option>
+                <option value="musica" {% if tipo == 'musica' %}selected{% endif %}>Música (Álbumes)</option>
+                <option value="artistas" {% if tipo == 'artistas' %}selected{% endif %}>Artistas</option>
             </select>
 
             <button type="submit" class="btn-buscar">Buscar</button>
@@ -74,7 +88,31 @@
             {% endif %}
         {% endif %}
 
-        <!-- Resultados: Música -->
+        <!-- Resultados: Artistas -->
+        {% if tipo == 'artistas' %}
+            {% if artistas %}
+                <table class="tabla-resultados">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre del Artista</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for art in artistas %}
+                        <tr>
+                            <td>{{ loop.index }}</td>
+                            <td><strong>{{ art.nombre }}</strong></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p class="sin-resultados">No se encontraron artistas.</p>
+            {% endif %}
+        {% endif %}
+
+        <!-- Resultados: Música (Álbumes) -->
         {% if tipo == 'musica' %}
             {% if albumes %}
                 <table class="tabla-resultados">

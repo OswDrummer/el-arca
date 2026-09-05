@@ -11,7 +11,7 @@ def obtener_conexion():
     return conn
 
 # ---------------------------------------------------------
-# RUTA WEB PRINCIPAL (Buscador + Estadísticas)
+# RUTA WEB PRINCIPAL (Buscador + Listados)
 # ---------------------------------------------------------
 @app.route("/", methods=["GET"])
 def inicio():
@@ -20,11 +20,12 @@ def inicio():
 
     peliculas = []
     albumes = []
+    artistas = []
 
     conn = obtener_conexion()
     cursor = conn.cursor()
 
-    # 1. Totales para el encabezado
+    # Totales para el encabezado
     cursor.execute("SELECT COUNT(*) AS total FROM artistas")
     res_artistas = cursor.fetchone()
     total_artistas_val = res_artistas["total"] if res_artistas else 0
@@ -37,7 +38,7 @@ def inicio():
     res_albumes = cursor.fetchone()
     total_albumes_val = res_albumes["total"] if res_albumes else 0
 
-    # 2. Consultas de búsqueda / listado inicial
+    # Lógica de consulta según el filtro activo
     if filtro_tipo == "peliculas":
         if busqueda:
             query = """
@@ -54,7 +55,8 @@ def inicio():
             param = f"%{busqueda}%"
             peliculas = cursor.execute(query, (param, param, param, param, param, param, param)).fetchall()
         else:
-            peliculas = cursor.execute("SELECT * FROM peliculas ORDER BY id DESC LIMIT 50").fetchall()
+            # Si no hay búsqueda, lista TODAS las películas ordenadas por título
+            peliculas = cursor.execute("SELECT * FROM peliculas ORDER BY titulo ASC").fetchall()
 
     elif filtro_tipo == "musica":
         if busqueda:
@@ -76,9 +78,17 @@ def inicio():
                 SELECT a.nombre AS artista, al.titulo_album, al.anio_lanzamiento, al.bitrate, al.formato
                 FROM albumes al
                 JOIN artistas a ON al.artista_id = a.id
-                ORDER BY al.anio_lanzamiento ASC, al.titulo_album ASC LIMIT 50
+                ORDER BY al.anio_lanzamiento ASC, al.titulo_album ASC
             """
             albumes = cursor.execute(query).fetchall()
+
+    elif filtro_tipo == "artistas":
+        if busqueda:
+            query = "SELECT * FROM artistas WHERE nombre LIKE ? ORDER BY nombre ASC"
+            artistas = cursor.execute(query, (f"%{busqueda}%",)).fetchall()
+        else:
+            # Lista TODOS los artistas en orden alfabético
+            artistas = cursor.execute("SELECT * FROM artistas ORDER BY nombre ASC").fetchall()
 
     conn.close()
 
@@ -86,6 +96,7 @@ def inicio():
         "index.html",
         peliculas=peliculas,
         albumes=albumes,
+        artistas=artistas,
         busqueda=busqueda,
         tipo=filtro_tipo,
         total_artistas=total_artistas_val,
