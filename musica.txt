@@ -1,27 +1,33 @@
 Ace Of Base
-The Sign (1993) [Opus 256k]
-The Bridge (1995) [Opus 256k]
 Flower (1998) [Opus 256k]
+The Bridge (1995) [Opus 256k]
+The Sign (1993) [Opus 256k]
 
 Animals as Leaders
 Animals as Leaders (2009)  [Opus 256k]
-Weightless (2011) [Opus 256k] [Opus 128k]
-The Joy of Motion (2014) [Opus 256k]
-The Madness Of Many (2016)
 Parrhesia (2022) [Opus 256k]
+The Joy of Motion (2014) [Opus 256k]
+The Madness Of Many (2016) [Opus 128k]
+Weightless (2011) [Opus 256k] [Opus 128k]
 
 Apocalyptica
-Plays Metallica By Four Cellos (1996) [Opus 256k]
-Inquisition Symphony (1998) [Opus 256k]
-Cult (2000) [Opus 256k]
-Reflections (2003) [Opus 256k]
-Apocalyptica (2005) [Opus 256k]
-Words Collide (2007) [Opus 256k]
 7th Symphony (2010) [Opus 256k]
 Amplified (2006) [Opus 256k]
+Apocalyptica (2005) [Opus 256k]
 Cell-0 (2020) [Opus 256k]
-Shadowmaker (2015) [Opus 256k]
+Cult (2000) [Opus 256k]
+Inquisition Symphony (1998) [Opus 256k]
+Plays Metallica By Four Cellos (1996) [Opus 256k]
 Plays Metallica Vol. 2 (2024) [Opus 256k]
+Reflections (2003) [Opus 256k]
+Shadowmaker (2015) [Opus 256k]
+Words Collide (2007) [Opus 256k]
+
+Arch Enemy
+Blood Dynasty (2025) [Opus 256k]
+Deceivers (2022) [Opus 256k]
+War Eternal (2014) [Opus 256k]
+Will To Power (2017) [Opus 256k]
 
 Blink-182
 Blink-182 (2003) [Opus 256k]
@@ -32,8 +38,14 @@ One More Time... Part-2 (2024) [Opus 128k]
 Take Off Your Pants And Jacket (2001) [Opus 256k]
 The Mark, Tom And Travis Show (2000) [Opus 256k]
 
+Bob Marley And The Wailers
+Legend (2002) [Opus 256k]
+
+Collective Soul
+Collective Soul (1995) [Opus 128k]
+
 Cultura Profética
-En Bucle (2026) [Opus 128k]
+En Bucle (2026) [Opus 256k]
 
 Culture Club
 Gold (2013) [Opus 256k]
@@ -57,14 +69,20 @@ Ten Thousand Fists (2005) [Opus 256k]
 The Lost Children (2011) [Opus 256k]
 The Sickness (2000) [Opus 256k]
 
+Garbage
+Garbage (1995) [Opus 256k]
+Version 2.0 (1998) [Opus 256k]
+
 Incubus
 8 (2017) [Opus 256k]
 A Crow Left Of The Murder (2004) [Opus 256k]
+Agoraphobia Acoustic Version (2020)  [Opus 128k]
 Alive at Red Rocks (2004) [Opus 256k]
 Enjoy Incubus (1997) [Opus 256k]
 Fungus Amongus (1995) [Opus 256k]
 If Not Now, When (2011) [Opus 256k]
 Light Grenades (2006) [Opus 256k]
+Make A Move (2005) [Opus 128k]
 Make Yourself (1999) [Opus 256k]
 Monuments And Melodies (2009) [Opus 256k]
 Morning View (2001) [Opus 256k]
@@ -74,17 +92,15 @@ S.C.I.E.N.C.E. (1997) [Opus 256k]**
 Trust Fall Side A (2015) [Opus 256k]
 Trust Fall Side B (2020) [Opus 128k]
 When Incubus Attacks (2000) [Opus 256k]
-Agoraphobia Acoustic Version (2020)  [Opus 128k]
-Make A Move (2005) [Opus 128k]
 
 Jem
 Finally Woken (2004) [Opus 256k]
 
 Katatonia
 Last Fair Deal Gone Down (2001) [Opus 256k]
-Viva Emptiness (2003) [Opus 256k]
-The Great Cold Distance (2006) [Opus 256k]
 Night is the New Day (2009) [Opus 256k]
+The Great Cold Distance (2006) [Opus 256k]
+Viva Emptiness (2003) [Opus 256k]
 
 Korn
 Follow The Leader (1996) [Opus 256k]
@@ -114,72 +130,72 @@ Living Things (2012) [Opus 256k]
 Meteora (2003) [Opus 256k]
 Minutes To Midnight (2007) [Opus 256k]
 One More Light (2017) [Opus 256k]
-The Hunting Party (2014) [Opus 256k]
 Piano Instrumentals (2003) [Mp3 128kbps]
+The Hunting Party (2014) [Opus 256k]
 
 Los Pericos
 Big Yuyo (1992) [Opus 128k]
+Mystic Love (1998) [Opus 256k]
 Pampas Reggae (1994) [Opus 256k]
 Yerba Buena (1996) [Opus 128k]
-Mystic Love (1998) [Opus 256k]
 
 Los Prisioneros
 Corazones (1991) [Opus 256k]
 Ni Por La Razón, Ni Por La Fuerza (1996) [Opus 256k]
 
 Mecano
-Mecano (1982) [Opus 256k]
-Dónde Está El País De Las Hadas (1983) [Opus 256k]
-Ya Viene El Sol (1984) [Opus 256k]
-Entre El Cielo Y El Suelo (1986) [Opus 256k]
-Descanso Dominical  (1988) [Opus 256k]
 Aidalai (1991) [Opus 128k]
+Descanso Dominical  (1988) [Opus 256k]
+Dónde Está El País De Las Hadas (1983) [Opus 256k]
+Entre El Cielo Y El Suelo (1986) [Opus 256k]
+Mecano (1982) [Opus 256k]
+Ya Viene El Sol (1984) [Opus 256k]
 
 Megadeth
-Megadeth (2026) [Opus 256k]
-The Sick, "The Diying.. And The Death (2022) [Opus 256k]
+Countdown to Extinction (1992) [Opus 256k]
+Cryptic Writings (1997) [Opus 256k]
 Dystopia (2016) [Opus 256k]
-Super Collider (2013) [Opus 128k]
-Th1rt3en (2011) [Opus 256k]
 Endgame (2009) [Opus 256k]
-United Abominations (2007) [Opus 256k]
-The System Has Failed (2004) [Opus 256k]
-The World Needs a Hero (2001) [Opus 256k]
-Rude Awakening (2008) [Opus 128k]
+Hydden Treasures (2007) [Opus 256k]
+Megadeth (2026) [Opus 256k]
 Live Trax (1997) [Mp3 128kbps]
 Live Trax II (1998) [Mp3 128kbps]
-Hydden Treasures (2007) [Opus 256k]
-Cryptic Writings (1997) [Opus 256k]
-Countdown to Extinction (1992) [Opus 256k]
+Rude Awakening (2008) [Opus 128k]
 Rust in Peace (1990) [Opus 256k]
+Super Collider (2013) [Opus 128k]
+The Sick, "The Diying.. And The Death (2022) [Opus 256k]
+The System Has Failed (2004) [Opus 256k]
+The World Needs a Hero (2001) [Opus 256k]
+Th1rt3en (2011) [Opus 256k]
+United Abominations (2007) [Opus 256k]
 
 Metallica
-Master Of Puppets (1986) [Opus 256k]
+72 Seasons (2023) [Opus 256k]
 And Justice For All (1988) [Opus 256k]
+Beyond Magnietic (2012) [Opus 256k]
 Black Album (1991) [Opus 256k]
+Death Magnetic (2008) [Opus 256k]
+Garage, Inc. (1998) [Opus 256k]
+Hirewired to Self-Destruct (2016) [Opus 256k]
+I Disappear (2000) [Opus 128k]
+Master Of Puppets (1986) [Opus 256k]
 Load (1996) [Opus 256k]
 Reload (1997) [Opus 256k]
-Garage, Inc. (1998) [Opus 256k]
 S&M (1999) [Opus 256k]
 S&M2 (2020) [Opus 256k]
-Death Magnetic (2008) [Opus 256k]
-Beyond Magnietic (2012) [Opus 256k]
-Hirewired to Self-Destruct (2016) [Opus 256k]
-72 Seasons (2023) [Opus 256k]
-I Disappear (2000) [Opus 128k]
 
 Michael Jackson
-Off The Wall (1979) [Opus 256k]
-Thriller (1982) [Opus 256k]
 Bad (1987) [Opus 256k]
+Blood On The Dancer Floor (1997) [Opus 256k]
 Dangerous (1991) [Opus 256k]
 HIStory (1995) [Opus 256k]
-Blood On The Dancer Floor (1997) [Opus 256k]
 Invinsible (2001) [Opus 256k]
+Michael (2010) [Opus 256k]
+Off The Wall (1979) [Opus 256k]
 Ones (2007) [Opus 256k]
 This Is It (2009) [Opus 256k]
+Thriller (1982) [Opus 256k]
 Xscape (2014) [Opus 256k]
-Michael (2010) [Opus 256k]
 
 Mojo Pojo
 Mojo Pojo (2010) [Opus 256k]
@@ -199,14 +215,14 @@ Pipes Of Peace (1983) [Opus 256k]
 
 Rammstein
 Herzeleid (1995) [Opus 256k]
-Sehnsucht (1997) [Opus 256k]
+Liebe Ist Fuer Alle Da (2009) [Opus 256k]
 Mutter (2001) [Opus 256k]
+Rammstein (2019) [Opus 256k]
+Raritaten (2015) [Opus 256k]
 Reise Reise (2004) [Opus 256k]
 Rosenrot (2005) [Opus 256k]
-Liebe Ist Fuer Alle Da (2009) [Opus 256k]
-Rammstein (2019) [Opus 256k]
+Sehnsucht (1997) [Opus 256k]
 Zeit (2022) [Opus 256k]
-Raritaten (2015) [Opus 256k]
 
 Red Hot Chili Peppers
 Blood Sugar Sex Magik (1991) [Opus 256k]
@@ -223,8 +239,8 @@ Rockwell
 Somebody's Watching Me (1983) [Opus 256k]
 
 Sheryl Crow
-Tusday Night Music Club (1993) [Opus 256k]
 The Very Best Of Sheryl (2003) Crow [Opus 256k]
+Tusday Night Music Club (1993) [Opus 256k]
 
 The Beatles
 A Hard Day´s Night (1964) [Opus 256k]
@@ -246,12 +262,12 @@ Yellow Submarine (1969) [Opus 256k]
 The Cardigans
 Acoustic (2006) [Mp3 128kbps]
 Emmerdale (1994) [Opus 256k]
-Life (1996) [Opus 256k]
 First Band On The Moon (1996) [Opus 256k]
-The Other Side Of The Moon (1997) [Opus 256k]
 Gran Turismo (1998) [Opus 256k]
+Life (1996) [Opus 256k]
 Long Gone Before Daylight (2003) [Opus 256k]
 Super Extra Gravity (2005) [Opus 256k]
+The Other Side Of The Moon (1997) [Opus 256k]
 
 The Corrs
 Borrowed Heaven (2004) [Opus 256k]
@@ -264,12 +280,11 @@ Talk on Corners (1997) [Opus 256k]
 The Corrs Unplugged (1999) [Opus 256k]
 White Light (2015) [Opus 128k]
 
-
 The Cure
-The Cure Show (1993) [Opus 256k]
-Gratest Hits (2001) [Opus 256k]
-Galore (1997) [Opus 256k]
 Bloodflowers (2000) [Opus 256k]
+Galore (1997) [Opus 256k]
+Gratest Hits (2001) [Opus 256k]
+The Cure Show (1993) [Opus 256k]
 
 The Jacksons
 Destiny (1978) [Opus 256k]
@@ -283,28 +298,28 @@ TLC
 Fanmail (1999) [Opus 256k]
 
 Tremonti
+A Diying Machine (2018) [Opus 128k]
 All I Was (2012) [Opus 128k]
 Cauterize (2015) [Opus 128k]
 Dust (2016) [Opus 128k]
-A Diying Machine (2018) [Opus 128k]
 Marching in Time (2021) [Opus 128k]
 The End Will Show Us How (2025) [Opus 128k]
 
 Various Artists
-The Besth Music Of All Times (1990) [Opus 128k]
-La Mega 90's Songs (1990) [Opus 128k]
-Solo Girls 90's Pop Songs (1990) [Opus 128k]
 Breakdance (1984) [Mp3 128kbps]
 Breakin' (1984) [Opus 128k]
 Crazy Mix (1986) [Mp3 64kbps]
+Dynamite (1983) [Opus 128k]
+Electric Shock (1987) [Opus 128k]
 Ghostbusters (1984) [Opus 128k]
 Highspeed (1983) [Opus 128k]
 Hit Express (1982) [Opus 128k]
-Turbo Hits (1984) [Opus 128k]
-Starś Fire (1984) [Opus 128k]
+La Mega 90's Songs (1990) [Opus 128k]
 Mouth To Mouth (1979) [Opus 128k]
-Dynamite (1983) [Opus 128k]
-Electric Shock (1987) [Opus 128k]
+Solo Girls 90's Pop Songs (1990) [Opus 128k]
+Starś Fire (1984) [Opus 128k]
+The Besth Music Of All Times (1990) [Opus 128k]
+Turbo Hits (1984) [Opus 128k]
 Woodpeckers From Space (1983) [Opus 256k]
 
 UB40
@@ -315,9 +330,9 @@ Labour Of Love (1983)  [Opus 256k]
 Labour Of Love II (1989) [Opus 256k]
 Labour Of Love III (1998) [Opus 256k]
 Promises And Lies (1993) [Opus 256k]
-Who You Fighting For (2005) [Opus 128k]
 The Best Of UB40 Volume I (1987) [Opus 128k]
 The Best Of UB40 Volume II (1995) [Opus 128k]
+Who You Fighting For (2005) [Opus 128k]
 
 Yanni
 Live At The Acropolis (1994) [Opus 256k]
