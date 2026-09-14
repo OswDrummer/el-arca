@@ -78,6 +78,7 @@
                             <th>Saga</th>
                             <th>Año</th>
                             <th>Resolución</th>
+                            <th>Códec</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -87,6 +88,13 @@
                             <td>{{ p.saga or '-' }}</td>
                             <td>{{ p.anio_estreno }}</td>
                             <td>{{ p.resolucion }}</td>
+                            <td>
+                                {% if p.es_x265 == 1 %}
+                                    <span class="badge-x265">x265</span>
+                                {% else %}
+                                    <span class="badge-x264">x264</span>
+                                {% endif %}
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>

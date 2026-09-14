@@ -86,7 +86,8 @@ def procesar_peliculas():
             es_animada = 1 if "animada" in linea.lower() or "animacion" in linea.lower() else 0
 
             titulo = re.sub(r'\(\d{4}\)', '', linea)
-            titulo = re.sub(r'\b(1080p|720p|4K|2160p|480p|x265|HEVC|animada)\b', '', titulo, flags=re.IGNORECASE)
+            # Se agrega x264 y h264 a la limpieza de palabras reservadas
+            titulo = re.sub(r'\b(1080p|720p|4K|2160p|480p|x265|x264|hevc|h264|animada)\b', '', titulo, flags=re.IGNORECASE)
             titulo = re.sub(r'\[.*?\]', '', titulo).strip()
 
             cursor.execute("""
