@@ -3,18 +3,27 @@ Flower (1998) [Opus 256k]
 The Bridge (1995) [Opus 256k]
 The Sign (1993) [Opus 256k]
 
+Alanis Morissette
+Feast on Scraps (2002) [Opus 256k]
+Flavors of Entanglement (2008) [Opus 256k]
+Havoc and Bright Lights (2012) [Opus 256k]
+Jagged Little Pill (1995) [Opus 256k]
+Supposed Former Infatuation Junkie (1998) [Opus 256k]
+So-Called Chaos (2004) [Opus 256k]
+Under Rug Swept (2002) [Opus 256k]
+
 Ambra
-Angelistos (1996) [Mp3 128kbps]
-T'appartengo (1994) [Opus 128k]
+Angelistos (1996) [Opus 128k]
+T'appartengo (1994) [Opus 256k]
 Te Pertenezco (1995) [Opus 256k]
-Ritmos Vitales (1998) [Mp3 128kbps]
+Ritmos Vitales (1998) [Opus 128k]
 
 Animals as Leaders
 Animals as Leaders (2009)  [Opus 256k]
 Parrhesia (2022) [Opus 256k]
 The Joy of Motion (2014) [Opus 256k]
-The Madness Of Many (2016) [Opus 128k]
-Weightless (2011) [Opus 256k] [Opus 128k]
+The Madness Of Many (2016) [Opus 256k]
+Weightless (2011) [Opus 256k]
 
 Apocalyptica
 7th Symphony (2010) [Opus 256k]
@@ -47,6 +56,19 @@ The Mark, Tom And Travis Show (2000) [Opus 256k]
 Bob Marley And The Wailers
 Legend (2002) [Opus 256k]
 
+Circus Maximus
+Havoc (2016) [Opus 256k]
+Isolate (2007) [Opus 256k]
+Isolate Chapters (2019) [Opus 256k]
+Nine (2012) [Opus 256k]
+The 1st Chapter (2005) [Opus 256k]
+
+Chimp Spanner
+All Roads Lead Here (2012) [Opus 256k]
+At The Dream's Edge (2010) [Opus 256k]
+Imperium Vorago (2006) [Opus 256k]
+The Singles (2021) [Opus 256k]
+
 Collective Soul
 Collective Soul (1995) [Opus 128k]
 
@@ -58,10 +80,10 @@ Gold (2013) [Opus 256k]
 
 Cynic
 Ascension Codes (2021) [Opus 256k]
-Carbon Based Anatomy (2011) [Opus 128k]
-Kindly Bent to Free Us (2014) [Opus 128k]
-Re-Traced (2010) [Opus 128k]
-Traced In Air (2008) [Opus 128k]
+Carbon Based Anatomy (2011) [Opus 256k]
+Kindly Bent to Free Us (2014) [Opus 256k]
+Re-Traced (2010) [Opus 256k]
+Traced In Air (2008) [Opus 256k]
 
 Disturbed
 Asylum (2015) [Opus 256k]
@@ -75,6 +97,18 @@ Ten Thousand Fists (2005) [Opus 256k]
 The Lost Children (2011) [Opus 256k]
 The Sickness (2000) [Opus 256k]
 
+Evanescence
+Evanescence (2011) [Opus 256k]
+Fallen (2023) [Opus 256k]
+Sanctuary (2026) [Opus 256k]
+The Bitter Truth (2021) [Opus 256k]
+The Open Door (2006) [Opus 256k]
+
+Flying Colors
+Flying Colors (2012) [Opus 256k]
+Second Nature (2014) [Opus 256k]
+Third Degree (2019) [Opus 256k]
+
 Garbage
 Garbage (1995) [Opus 256k]
 Version 2.0 (1998) [Opus 256k]
@@ -82,7 +116,7 @@ Version 2.0 (1998) [Opus 256k]
 Incubus
 8 (2017) [Opus 256k]
 A Crow Left Of The Murder (2004) [Opus 256k]
-Agoraphobia Acoustic Version (2020)  [Opus 128k]
+Agoraphobia Acoustic Version (2020)  [Opus 256k]
 Alive at Red Rocks (2004) [Opus 256k]
 Enjoy Incubus (1997) [Opus 256k]
 Fungus Amongus (1995) [Opus 256k]
@@ -96,7 +130,7 @@ Morning View XXIII (2024) [Opus 256k]
 Pardon Me (2000) [Opus 256k]
 S.C.I.E.N.C.E. (1997) [Opus 256k]**
 Trust Fall Side A (2015) [Opus 256k]
-Trust Fall Side B (2020) [Opus 128k]
+Trust Fall Side B (2020) [Opus 256k]
 When Incubus Attacks (2000) [Opus 256k]
 
 Jem
@@ -140,17 +174,17 @@ Piano Instrumentals (2003) [Mp3 128kbps]
 The Hunting Party (2014) [Opus 256k]
 
 Los Pericos
-Big Yuyo (1992) [Opus 128k]
+Big Yuyo (1992) [Opus 256k]
 Mystic Love (1998) [Opus 256k]
 Pampas Reggae (1994) [Opus 256k]
-Yerba Buena (1996) [Opus 128k]
+Yerba Buena (1996) [Opus 256k]
 
 Los Prisioneros
 Corazones (1991) [Opus 256k]
 Ni Por La Razón, Ni Por La Fuerza (1996) [Opus 256k]
 
 Mecano
-Aidalai (1991) [Opus 128k]
+Aidalai (1991) [Opus 256k]
 Descanso Dominical  (1988) [Opus 256k]
 Dónde Está El País De Las Hadas (1983) [Opus 256k]
 Entre El Cielo Y El Suelo (1986) [Opus 256k]
@@ -205,6 +239,10 @@ Xscape (2014) [Opus 256k]
 
 Mojo Pojo
 Mojo Pojo (2010) [Opus 256k]
+
+Nightwaish
+Dark Passion Play (2007)
+Imaginaerum (2011)
 
 The Offspring
 Amerinaca (1998) [Opus 256k]
@@ -348,4 +386,4 @@ Yanni
 Live At The Acropolis (1994) [Opus 256k]
 Tribute (1997) [Opus 256k]
 The Concert Evenet (2006) [Opus 256k]
-The Dream Concert (2006) [Opus 128k]
+The Dream Concert (2006) [Opus 256k]
